@@ -428,8 +428,8 @@ int condicionalAninhado(){
         if((num[i] % 3 == 0) || (num[i] > 10)){
             cout << num[i] << endl;
         }
-    return false;
 }
+return false;
 }
 
 //Busca por Valor Máximo e Mínimo no Array:
@@ -454,10 +454,102 @@ int buscaValorArray(){
     return false;
 }
 
+//Exercícios sobre Strings e Arrays em C++
 
+//Nível 1:
+//Declare uma variável do tipo String chamada nome e armazene seu nome nela. Imprima o valor de nome usando cout.
+int stringNome(){
+  string nome = "Rafael";
+  cout<<"Olá " << nome << endl;
+  
+  return false;
+}
+
+//Declare um array de caracteres vogais com 5 posições. 
+//Insira manualmente as vogais ('a', 'e', 'i', 'o', 'u') nas posições do array.
+//Imprima cada vogal em uma linha usando cout.
+
+int arrayVogais(){
+  char vogais[5][10] = {"a","e","i","o","u"};
+  cout<<vogais[0]<<endl;
+  cout<<vogais[1]<<endl;
+  cout<<vogais[2]<<endl;
+  cout<<vogais[3]<<endl;
+  cout<<vogais[4]<<endl;
+
+  return false;
+}
+
+//Declare uma variável do tipo String chamada letra. 
+//Leia um caractere do usuário usando cin e armazene-o em letra. 
+//Verifique se letra é uma vogal usando a estrutura if e imprima uma mensagem informando se é ou não.
+
+int verificaVogal(){
+  string letra;
+  cout<<"Digite uma letra: ";
+  cin>>letra;
+
+  if((letra == "a") || (letra == "e") || (letra == "i") || (letra == "o") || (letra == "u"))
+  cout<<letra<<" é uma vogal."<<endl;
+  else{
+    cout<<letra<<" é uma consoante"<<endl;
+  }
+  return false;
+}
+
+//Declare um array de caracteres palavra com 10 posições. 
+//Leia uma palavra do usuário usando cin e armazene-a em palavra.
+//Imprima a palavra usando cout.
+
+int palavraUsuario(){
+  char palavra[10];
+  cout<<"Digite uma palavra: ";
+  cin>>palavra;
+
+  cout<<"Sua palavra é: "<< palavra <<endl;
+
+  return false;
+}
+
+//Declare um array de caracteres frase com 20 posições. 
+//Leia uma frase do usuário usando cin e armazene-a em frase. 
+//Imprima a frase usando cout.
+
+int fraseUsuario(){
+    char frase[20];
+    cout <<"Digite uma frase: " << endl;
+    cin.ignore();
+    cin.getline(frase, 20);
+
+    cout<< frase << endl;
+
+return false;
+}
+
+//Nivel 2
+//Declare um array de caracteres numeros com 10 posições. 
+//Armazene manualmente os números de 1 a 10 nas posições do array. 
+//Imprima os números pares do array em linhas separadas usando cout.
+
+int numerosParesArray(){
+    int num[11] = {1,2,3,4,5,6,7,8,9,10};
+
+    cout<<"Os números pares são: " << endl;
+    cout<<num[1] << endl;
+    cout<<num[3] << endl;
+    cout<<num[5] << endl;
+    cout<<num[7] << endl;
+    cout<<num[9] << endl;
+
+return false;
+  }
+
+//Declare um array de caracteres frutas com 5 posições. 
+//Armazene manualmente os nomes de 5 frutas nas posições do array. 
+//Imprima a fruta que está na posição 3 do array usando cout.
 
   int main(){
-    elementosEspecificos();
+    numerosParesArray();
     return false;
   
   }
