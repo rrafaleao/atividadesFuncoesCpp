@@ -548,8 +548,246 @@ return false;
 //Armazene manualmente os nomes de 5 frutas nas posições do array. 
 //Imprima a fruta que está na posição 3 do array usando cout.
 
-  int main(){
-    numerosParesArray();
+int frutasArray(){
+  string frutas[4];
+    frutas[0] = "Maça";
+    frutas[1] = "Banana";
+    frutas[2] = "Melancia";
+    frutas[3] = "Uva";
+    frutas[4] = "Kiwi";
+
+    cout <<"A terceira fruta é: " << frutas[2] << endl;
+    
     return false;
+}
+//Declare um array de caracteres cores com 7 posições. 
+//Armazene manualmente os nomes de 7 cores nas posições do array. 
+//Leia um número do usuário entre 1 e 7 usando cin. 
+//Imprima a cor que está na posição informada pelo usuário usando cout.
+
+int coresArray(){
+    string cores[7] = {"azul", "verde", "amarelo", "laranja", "cinza", "preto", "roxo"};
+    int num;
+
+    cout << "Digite um número de 0 a 6" << endl;
+    cin >> num;
+
+    if(num == 0){
+        cout <<""<< (cores[0]) << endl;
+    }
+    if(num == 1){
+        cout <<""<< (cores[1]) << endl;
+    }
+    if(num == 2){
+        cout <<""<< (cores[2]) << endl;
+    }
+    if(num == 3){
+        cout <<""<< (cores[3]) << endl;
+    }
+    if(num == 4){
+        cout <<""<< (cores[4]) << endl;
+    }
+    if(num == 5){
+        cout <<""<< (cores[5]) << endl;
+    }
+    if(num == 6){
+        cout <<""<< (cores[6]) << endl;
+    }
+    if((num >= 7)||(num < 0)){
+        cout <<"ERRO! Digite um número válido." << endl;
+}
+return 0;
+}
+
+//Declare um array de caracteres animais com 10 posições. 
+//Armazene manualmente os nomes de 10 animais nas posições do array. 
+//Leia um caractere do usuário usando cin. 
+//Verifique se o caractere é a primeira letra de um animal do array. 
+//Se for, imprima o nome do animal completo.
+
+int animalArray(){
+  string animais[10] = {"Abelha", "Coelho","Gato","Hipopotamo","Morcego","Ovelha","Porco","Rato","Tamanduá","Urso"};
+    char caractere;
+    cout <<"Digite um caractere: " << endl;
+    cin >> caractere;
+
+    switch (caractere) {
+    case 'a':
+    cout << "Abelha" << endl;
+    break;
+
+    case 'c':
+    cout <<"Coelho" << endl;
+    break;
+
+    case 'g':
+    cout <<"Gato" << endl;
+    break;
+
+    case 'h':
+    cout <<"Hipopotamo" << endl;
+    break;
+
+    case 'm':
+    cout <<"Morcego" << endl;
+    break;
+
+    case 'o':
+    cout <<"Ovelha" << endl;
+    break;
+
+    case 'p':
+    cout <<"Porco" << endl;
+    break;
+    
+    case 'r':
+    cout <<"Rato" << endl;
+    break;
+
+    case 't':
+    cout <<"Tamanduá" << endl;
+    break;
+
+    case 'u':
+    cout <<"Urso" << endl;
+    break;
+
+    }
+return false;
+}
+
+
+//Declare um array de caracteres dias com 7 posições. 
+//Armazene manualmente os nomes dos 7 dias da semana nas posições do array. 
+//Leia um número do usuário entre 1 e 7 usando cin. 
+//Imprima o dia da semana que está na posição informada pelo usuário usando cout.
+
+int diasArray(){
+  string dias[7] = {"Domingo","Segundo","Terça","Quarta","Quinta","Sexta","Sábado"};
+    int num;
+
+    cout <<"Digite Um Número entre 1 e 7: " << endl;
+    cin >> num;
+
+  if(num == 1){
+        cout <<""<< (dias[0]) << endl;
+    }
+    if(num == 2){
+        cout <<""<< (dias[1]) << endl;
+    }
+    if(num == 3){
+        cout <<""<< (dias[2]) << endl;
+    }
+    if(num == 4){
+        cout <<""<< (dias[3]) << endl;
+    }
+    if(num == 5){
+        cout <<""<< (dias[4]) << endl;
+    }
+    if(num == 6){
+        cout <<""<< (dias[5]) << endl;
+    }
+    if(num == 7){
+        cout <<""<< (dias[6]) << endl;
+    }
+    if((num > 7)||(num < 0)){
+        cout <<"ERRO! Digite um número válido." << endl;
+}
+return false;
+}
+
+//Declare um array de caracteres palavra1 e palavra2 com 10 posições cada. 
+//Leia duas palavras do usuário usando cin e armazene-as em palavra1 e palavra2. 
+//Compare as duas palavras usando a estrutura if e imprima qual palavra é maior em ordem alfabética.
+
+int comparandoPalavras(){
+  char palavra1[10], palavra2[10];
+    cout <<"Digite a primeira palavra: " << endl;
+    cin >> palavra1;
+    cout <<"Digite a segunda palavra: " << endl;
+    cin >> palavra2;
+
+    if(palavra1 > palavra2){
+        cout<<"A segunda palavra é maior (Em ordem alfabetica.)" << endl;
+    }else{
+        cout <<"A primeira palavra é maior (Em ordem alfabetica.)" << endl;
+    }
+  return false;
+}
+
+//Declare um array de caracteres frase com 20 posições. 
+//Leia uma frase do usuário usando cin e armazene-a em frase. 
+//Conte o número de vogais na frase e imprima o resultado usando cout.
+
+int numVogaisFrase(){
+  char frase[20];
+  cout<<"Digite uma frase: ";
+  cin>>frase;
+    
+    int num_vogais = 0;
+    if (frase[0] == 'a' || frase[0] == 'e' || frase[0] == 'i' || frase[0] == 'o' || frase[0] == 'u') num_vogais++;
+    if (frase[1] == 'a' || frase[1] == 'e' || frase[1] == 'i' || frase[1] == 'o' || frase[1] == 'u') num_vogais++;
+    if (frase[2] == 'a' || frase[2] == 'e' || frase[2] == 'i' || frase[2] == 'o' || frase[2] == 'u') num_vogais++;
+    if (frase[3] == 'a' || frase[3] == 'e' || frase[3] == 'i' || frase[3] == 'o' || frase[3] == 'u') num_vogais++;
+    if (frase[4] == 'a' || frase[4] == 'e' || frase[4] == 'i' || frase[4] == 'o' || frase[4] == 'u') num_vogais++;
+    if (frase[5] == 'a' || frase[0] == 'e' || frase[0] == 'i' || frase[0] == 'o' || frase[0] == 'u') num_vogais++;
+    if (frase[6] == 'a' || frase[1] == 'e' || frase[1] == 'i' || frase[1] == 'o' || frase[1] == 'u') num_vogais++;
+    if (frase[7] == 'a' || frase[2] == 'e' || frase[2] == 'i' || frase[2] == 'o' || frase[2] == 'u') num_vogais++;
+    if (frase[8] == 'a' || frase[3] == 'e' || frase[3] == 'i' || frase[3] == 'o' || frase[3] == 'u') num_vogais++;
+    if (frase[9] == 'a' || frase[4] == 'e' || frase[4] == 'i' || frase[4] == 'o' || frase[4] == 'u') num_vogais++;
+    if (frase[10] == 'a' || frase[0] == 'e' || frase[0] == 'i' || frase[0] == 'o' || frase[0] == 'u') num_vogais++;
+    if (frase[11] == 'a' || frase[1] == 'e' || frase[1] == 'i' || frase[1] == 'o' || frase[1] == 'u') num_vogais++;
+    if (frase[12] == 'a' || frase[2] == 'e' || frase[2] == 'i' || frase[2] == 'o' || frase[2] == 'u') num_vogais++;
+    if (frase[13] == 'a' || frase[3] == 'e' || frase[3] == 'i' || frase[3] == 'o' || frase[3] == 'u') num_vogais++;
+    if (frase[14] == 'a' || frase[4] == 'e' || frase[4] == 'i' || frase[4] == 'o' || frase[4] == 'u') num_vogais++;
+    if (frase[15] == 'a' || frase[0] == 'e' || frase[0] == 'i' || frase[0] == 'o' || frase[0] == 'u') num_vogais++;
+    if (frase[16] == 'a' || frase[1] == 'e' || frase[1] == 'i' || frase[1] == 'o' || frase[1] == 'u') num_vogais++;
+    if (frase[17] == 'a' || frase[2] == 'e' || frase[2] == 'i' || frase[2] == 'o' || frase[2] == 'u') num_vogais++;
+    if (frase[18] == 'a' || frase[3] == 'e' || frase[3] == 'i' || frase[3] == 'o' || frase[3] == 'u') num_vogais++;
+    if (frase[19] == 'a' || frase[4] == 'e' || frase[4] == 'i' || frase[4] == 'o' || frase[4] == 'u') num_vogais++;
+    cout << "a frase tem " << num_vogais << " vogais" << endl;
+    
+    return false;
+}
+
+//Declare um array de caracteres texto com 50 posições. 
+//Leia um texto do usuário usando cin e armazene-o em texto. 
+//Encontre a primeira ocorrência da letra 'a' no texto e imprima a posição da letra.
+
+int textoVogal(){
+  string texto;
+    cout<<"Digite um texto: "<<endl;
+    getline(cin, texto);
+    cout<<"o texto digitado foi: " << texto << endl;
+
+    int pos = texto.find("a");
+    if(pos != std::string::npos){
+        cout << "a vogal 'A' foi encontrada na posição: " << pos << endl;
+    }else{
+        cout << "a vogal não foi encontrada." << endl;
+    }
+    return false;
+}
+
+//Declare um array de caracteres palavra com 10 posições. 
+//Leia uma palavra do usuário usando cin e armazene-a em palavra. 
+//Inverta a ordem dos caracteres da palavra e imprima a palavra invertida usando cout.
+
+int palavraInvertida(){
+  char palavra[10];
+    printf("Digite uma palavra: ");
+    scanf("%c %c %c %c %c %c %c %c %c %c",&palavra[0], &palavra[1], &palavra[2], &palavra[3], &palavra[4], &palavra[5], &palavra[6], &palavra[7], &palavra[8], &palavra[9]);
+
+    printf("%c %c %c %c %c %c %c %c %c %c", palavra[9], palavra[8], palavra[7], palavra[6], palavra[5], palavra[4], palavra[3], palavra[2], palavra[1], palavra[0]);
+
+    return false;
+}
+
+//
+
+  int main(){
+    numVogaisFrase();
+    return false;
+
   
   }
